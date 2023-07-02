@@ -1,8 +1,9 @@
 {
-  "name": "s-ui",
+  "name": "skyvue",
   "version": "0.0.0",
   "description": "Vue components styled with TailwindCss with configurable classes",
   "keywords": [
+    "Sky Vue",
     "tailwindcss",
     "vue",
     "s-ui",
