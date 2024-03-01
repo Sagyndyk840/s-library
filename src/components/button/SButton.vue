@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type {SkyButtonProps} from "types/components/button";
+import type {SkyButtonProps} from "@/types/components/button";
 
 const props = defineProps<SkyButtonProps>()
 </script>
