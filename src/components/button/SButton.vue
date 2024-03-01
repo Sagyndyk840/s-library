@@ -1,7 +1,12 @@
 <script setup lang="ts">
 import type {SkyButtonProps} from "@/types/components/button";
 
-const props = defineProps<SkyButtonProps>()
+const props = withDefaults(defineProps<SkyButtonProps>(), {
+  type: "button",
+  density: "default",
+  size: "regular",
+  rounded: "0",
+})
 </script>
 
 <template>

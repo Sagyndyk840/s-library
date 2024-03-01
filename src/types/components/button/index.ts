@@ -1,6 +1,9 @@
 export interface SkyButtonProps {
-    type: BtnType ,
-    outlined?: Outlined,
+    type: BtnType,
+    density: BtnDensity,
+    size: BtnSize,
+    rounded: BtnRounded,
+    outlined?: string,
     color?: string,
     textColor?: string,
     label?: string,
@@ -8,20 +11,34 @@ export interface SkyButtonProps {
     iconLeft?: string,
     iconRight?: string,
     align?: string,
-    size?: string,
     padding?: string,
-    rounded?: boolean,
     loading?: boolean
 }
 
 
-export type BtnType =
+type BtnType =
     | "button"
     | "submit"
     | "reset";
 
-enum Outlined {
-    true,
-    false,
-}
+type BtnDensity =
+    | "default"
+    | "compact"
+    | "comfortable";
+
+type BtnSize =
+    | "x-small"
+    | "small"
+    | "large"
+    | "x-large"
+    | "regular";
+
+type BtnRounded =
+    | "0"
+    | "xs"
+    | "sm"
+    | "x-large"
+    | "lg"
+    | "xl";
+
 
