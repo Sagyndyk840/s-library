@@ -1,4 +1,4 @@
-import {red, blue} from '@/utils/colors';
+import colors from '@/utils/colors';
 export interface SkyButtonProps {
     type: BtnType,
     density: BtnDensity,
@@ -7,7 +7,7 @@ export interface SkyButtonProps {
     align: BtnAlign,
     outlined: boolean,
     loading: boolean,
-    color:  string,
+    color:  Colors,
     textColor?: string,
     label: string,
     icon?: string,
@@ -15,6 +15,7 @@ export interface SkyButtonProps {
     iconRight?: string,
 }
 
+type Colors = typeof colors[number]
 
 type BtnType =
     | "button"

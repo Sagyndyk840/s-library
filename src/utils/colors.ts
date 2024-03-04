@@ -1,4 +1,4 @@
-const red: string[]  = [
+const red  = [
     'red',
     'red-lighten-5',
     'red-lighten-4',
@@ -15,9 +15,9 @@ const red: string[]  = [
     'red-accent-3',
     'red-accent-2',
     'red-accent-1',
-]
+] as const
 
-const pink: string[]  = [
+const pink  = [
     'pink',
     'pink-lighten-5',
     'pink-lighten-4',
@@ -34,9 +34,9 @@ const pink: string[]  = [
     'pink-accent-3',
     'pink-accent-2',
     'pink-accent-1',
-]
+] as const
 
-const purple: string[]  = [
+const purple  = [
     'purple',
     'purple-lighten-5',
     'purple-lighten-4',
@@ -53,9 +53,9 @@ const purple: string[]  = [
     'purple-accent-3',
     'purple-accent-2',
     'purple-accent-1',
-]
+] as const
 
-const deepPurple: string[]  = [
+const deepPurple  = [
     'deep-purple',
     'deep-purple-lighten-5',
     'deep-purple-lighten-4',
@@ -72,9 +72,9 @@ const deepPurple: string[]  = [
     'deep-purple-accent-3',
     'deep-purple-accent-2',
     'deep-purple-accent-1',
-]
+] as const
 
-const indigo: string[]  = [
+const indigo  = [
     'indigo',
     'indigo-lighten-5',
     'indigo-lighten-4',
@@ -91,9 +91,9 @@ const indigo: string[]  = [
     'indigo-accent-3',
     'indigo-accent-2',
     'indigo-accent-1',
-]
+] as const
 
-const blue: string[]  = [
+const blue  = [
     'blue',
     'blue-lighten-5',
     'blue-lighten-4',
@@ -110,9 +110,9 @@ const blue: string[]  = [
     'blue-accent-3',
     'blue-accent-2',
     'blue-accent-1',
-]
+] as const
 
-const lightBlue: string[]  = [
+const lightBlue  = [
     'light-blue',
     'light-blue-lighten-5',
     'light-blue-lighten-4',
@@ -129,9 +129,9 @@ const lightBlue: string[]  = [
     'light-blue-accent-3',
     'light-blue-accent-2',
     'light-blue-accent-1',
-]
+] as const
 
-const cyan: string[]  = [
+const cyan  = [
     'cyan',
     'cyan-lighten-5',
     'cyan-lighten-4',
@@ -148,9 +148,9 @@ const cyan: string[]  = [
     'cyan-accent-3',
     'cyan-accent-2',
     'cyan-accent-1',
-]
+] as const
 
-const teal: string[]  = [
+const teal  = [
     'teal',
     'teal-lighten-5',
     'teal-lighten-4',
@@ -167,9 +167,9 @@ const teal: string[]  = [
     'teal-accent-3',
     'teal-accent-2',
     'teal-accent-1',
-]
+] as const
 
-const green: string[]  = [
+const green  = [
     'green',
     'green-lighten-5',
     'green-lighten-4',
@@ -186,9 +186,9 @@ const green: string[]  = [
     'green-accent-3',
     'green-accent-2',
     'green-accent-1',
-]
+] as const
 
-const lightGreen: string[]  = [
+const lightGreen  = [
     'light-green',
     'light-green-lighten-5',
     'light-green-lighten-4',
@@ -205,9 +205,9 @@ const lightGreen: string[]  = [
     'light-green-accent-3',
     'light-green-accent-2',
     'light-green-accent-1',
-]
+] as const
 
-const lime: string[]  = [
+const lime  = [
     'lime',
     'lime-lighten-5',
     'lime-lighten-4',
@@ -224,9 +224,9 @@ const lime: string[]  = [
     'lime-accent-3',
     'lime-accent-2',
     'lime-accent-1',
-]
+] as const
 
-const yellow: string[]  = [
+const yellow  = [
     'yellow',
     'yellow-lighten-5',
     'yellow-lighten-4',
@@ -243,9 +243,9 @@ const yellow: string[]  = [
     'yellow-accent-3',
     'yellow-accent-2',
     'yellow-accent-1',
-]
+] as const
 
-const amber: string[]  = [
+const amber  = [
     'amber',
     'amber-lighten-5',
     'amber-lighten-4',
@@ -262,9 +262,9 @@ const amber: string[]  = [
     'amber-accent-3',
     'amber-accent-2',
     'amber-accent-1',
-]
+] as const
 
-const orange: string[]  = [
+const orange  = [
     'orange',
     'orange-lighten-5',
     'orange-lighten-4',
@@ -281,9 +281,9 @@ const orange: string[]  = [
     'orange-accent-3',
     'orange-accent-2',
     'orange-accent-1',
-]
+] as const
 
-const deepOrange: string[]  = [
+const deepOrange  = [
     'deep-orange',
     'deep-orange-lighten-5',
     'deep-orange-lighten-4',
@@ -300,9 +300,9 @@ const deepOrange: string[]  = [
     'deep-orange-accent-3',
     'deep-orange-accent-2',
     'deep-orange-accent-1',
-]
+] as const
 
-const brown: string[]  = [
+const brown  = [
     'brown',
     'brown-lighten-5',
     'brown-lighten-4',
@@ -314,9 +314,9 @@ const brown: string[]  = [
     'brown-darken-3',
     'brown-darken-2',
     'brown-darken-1',
-]
+] as const
 
-const blueGrey: string[]  = [
+const blueGrey  = [
     'blue-grey',
     'blue-grey-lighten-5',
     'blue-grey-lighten-4',
@@ -328,9 +328,9 @@ const blueGrey: string[]  = [
     'blue-grey-darken-3',
     'blue-grey-darken-2',
     'blue-grey-darken-1',
-]
+] as const
 
-const grey: string[]  = [
+const grey  = [
     'grey',
     'grey-lighten-5',
     'grey-lighten-4',
@@ -342,14 +342,14 @@ const grey: string[]  = [
     'grey-darken-3',
     'grey-darken-2',
     'grey-darken-1',
-]
+] as const
 
-const shades: string[]  = [
+const shades  = [
     'black',
     'white',
-]
+] as const
 
-const custom: string[]  = [
+const custom  = [
     'primary',
     'secondary',
     'accent',
@@ -357,28 +357,30 @@ const custom: string[]  = [
     'info',
     'success',
     'warning',
+] as const
+
+const colors = [
+    ...red,
+    ...pink,
+    ...purple,
+    ...deepPurple,
+    ...indigo,
+    ...blue,
+    ...lightBlue,
+    ...cyan,
+    ...teal,
+    ...green,
+    ...lightGreen,
+    ...lime,
+    ...yellow,
+    ...amber,
+    ...orange,
+    ...deepOrange,
+    ...brown,
+    ...blueGrey,
+    ...grey,
+    ...shades,
+    ...custom
 ]
 
-export {
-    red,
-    pink,
-    purple,
-    deepPurple,
-    indigo,
-    blue,
-    lightBlue,
-    cyan,
-    teal,
-    green,
-    lightGreen,
-    lime,
-    yellow,
-    amber,
-    orange,
-    deepOrange,
-    brown,
-    blueGrey,
-    grey,
-    shades,
-    custom
-}
+export default colors

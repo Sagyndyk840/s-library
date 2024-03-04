@@ -11,6 +11,9 @@ const props = withDefaults(defineProps<SkyButtonProps>(), {
   align: "center",
   loading: false
 })
+
+console.log(props.color)
+
 </script>
 
 <template>
