@@ -3,5 +3,5 @@ import SButton from "@/components/button/SButton.vue";
 </script>
 
 <template>
-  <SButton >asfasfa</SButton >
+  <SButton  color="asf222" >asfasfa</SButton >
 </template>

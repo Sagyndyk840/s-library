@@ -6,6 +6,10 @@ const props = withDefaults(defineProps<SkyButtonProps>(), {
   density: "default",
   size: "regular",
   rounded: "0",
+  outlined: false,
+  label: "label",
+  align: "center",
+  loading: false
 })
 </script>
 
@@ -15,13 +19,13 @@ const props = withDefaults(defineProps<SkyButtonProps>(), {
       props.color,
       props.align,
       props.size,
-      props.padding,
+      props.rounded,
       {
         'outlined': props.outlined,
-        'rounded': props.rounded,
       }
     ]">
       <slot :class="props.textColor">{{ props.label }}</slot>
     </button>
   </div>
 </template>
+

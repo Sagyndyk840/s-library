@@ -1,18 +1,18 @@
+import {red, blue} from '@/utils/colors';
 export interface SkyButtonProps {
     type: BtnType,
     density: BtnDensity,
     size: BtnSize,
     rounded: BtnRounded,
-    outlined?: string,
-    color?: string,
+    align: BtnAlign,
+    outlined: boolean,
+    loading: boolean,
+    color:  string,
     textColor?: string,
-    label?: string,
+    label: string,
     icon?: string,
     iconLeft?: string,
     iconRight?: string,
-    align?: string,
-    padding?: string,
-    loading?: boolean
 }
 
 
@@ -40,5 +40,10 @@ type BtnRounded =
     | "x-large"
     | "lg"
     | "xl";
+
+type BtnAlign =
+    | "center"
+    | "left"
+    | "right";
 
 
