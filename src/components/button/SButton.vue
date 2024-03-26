@@ -18,7 +18,7 @@ console.log(props.color)
 
 <template>
   <div>
-    <button :type="props.type" :class="[
+    <button :type="props.type" class="s-btn" :class="[
       props.color,
       props.align,
       props.size,
@@ -28,7 +28,23 @@ console.log(props.color)
       }
     ]">
       <slot :class="props.textColor">{{ props.label }}</slot>
+      <slot></slot>
+      <span class="material-icons">pie_chart</span>          <!-- Filled -->
+<!--      <span class="material-icons-outlined">pie_chart</span> &lt;!&ndash; Outlined &ndash;&gt;-->
+<!--      <span class="material-icons-round">pie_chart</span>    &lt;!&ndash; Round &ndash;&gt;-->
+<!--      <span class="material-icons-sharp">pie_chart</span>    &lt;!&ndash; Sharp &ndash;&gt;-->
+<!--      <span class="material-icons-two-tone">pie_chart</span>-->
     </button>
   </div>
 </template>
+
+<style scoped lang="scss">
+.s {
+  &-btn {
+    cursor: pointer;
+    outline: none;
+    border: 1px solid transparent;
+  }
+}
+</style>
 

@@ -8,7 +8,7 @@ export interface SkyButtonProps {
     outlined: boolean,
     loading: boolean,
     color:  Colors,
-    textColor?: string,
+    textColor: Colors,
     label: string,
     icon?: string,
     iconLeft?: string,
