@@ -12,13 +12,13 @@ const props = withDefaults(defineProps<SkyButtonProps>(), {
   loading: false
 })
 
-console.log(props.color)
+
 
 </script>
 
 <template>
   <div>
-    <button :type="props.type" class="s-btn" :class="[
+    <button @click="$emit('click')" :type="props.type" class="s-btn" :class="[
       props.color,
       props.align,
       props.size,
