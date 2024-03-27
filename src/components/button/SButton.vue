@@ -10,18 +10,25 @@ const props = withDefaults(defineProps<SkyButtonProps>(), {
   label: "label",
   align: "center",
   loading: false,
-  color: "blue",
+  color: "red",
   textColor: "white",
   disabled: false,
 })
+
+const emit = defineEmits(['click'])
+
+
+const click = () => {
+  emit('click')
+}
 
 </script>
 
 <template>
   <div>
-    <button :type="props.type" class="btn" :class="[
-      `text-${props.textColor}`,
-      `bg-${props.color}`,
+    <button :disabled="props.disabled" @click="click" :type="props.type" class="btn" :class="[
+      props.outlined ? `text-${props.color}` : `text-${props.textColor}`,
+      props.outlined ? `outlined-${props.color}` : `bg-${props.color}`,
       props.align,
       `btn-size-${props.size}`,
       `btn-align-${props.align}`,
@@ -29,9 +36,14 @@ const props = withDefaults(defineProps<SkyButtonProps>(), {
       `rounded-${props.rounded}`,
       {
         'outlined': props.outlined,
+        'disabled': props.disabled
       }
     ]">
+      <slot name="loader"></slot>
+      <slot name="icon"></slot>
+      <slot name="icon-left"></slot>
       <slot :class="props.textColor">{{ props.label }}</slot>
+      <slot name="icon-right"></slot>
     </button>
   </div>
 </template>
@@ -87,5 +99,9 @@ const props = withDefaults(defineProps<SkyButtonProps>(), {
         padding: 7px 12px;
       }
     }
+  }
+
+  .outlined {
+    background-color: transparent;
   }
 </style>

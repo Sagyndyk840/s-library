@@ -1,0 +1,964 @@
+.outlined {
+  &-red {
+    border: 1px solid $red-red !important;
+    &-lighten {
+      &-5 {
+        border: 1px solid $red-lighten-5 !important;
+      }
+      &-4 {
+        border: 1px solid $red-lighten-4 !important;
+      }
+      &-3 {
+        border: 1px solid $red-lighten-3 !important;
+      }
+      &-2 {
+        border: 1px solid $red-lighten-2 !important;
+      }
+      &-1 {
+        border: 1px solid $red-lighten-1 !important;
+      }
+    }
+
+    &-darken {
+      &-4 {
+        border: 1px solid $red-darken-4 !important;
+      }
+      &-3 {
+        border: 1px solid $red-darken-3 !important;
+      }
+      &-2 {
+        border: 1px solid $red-darken-2 !important;
+      }
+      &-1 {
+        border: 1px solid $red-darken-1 !important;
+      }
+    }
+
+    &-accent {
+      &-4 {
+        border: 1px solid $red-accent-4 !important;
+      }
+      &-3 {
+        border: 1px solid $red-accent-3 !important;
+      }
+      &-2 {
+        border: 1px solid $red-accent-2 !important;
+      }
+      &-1 {
+        border: 1px solid $red-accent-1 !important;
+      }
+    }
+  }
+  &-pink {
+    border: 1px solid $pink-pink  !important;
+    &-lighten {
+      &-5 {
+        border: 1px solid $pink-lighten-5  !important;
+      }
+      &-4 {
+        border: 1px solid $pink-lighten-4  !important;
+      }
+      &-3 {
+        border: 1px solid $pink-lighten-3  !important;
+      }
+      &-2 {
+        border: 1px solid $pink-lighten-2  !important;
+      }
+      &-1 {
+        border: 1px solid $pink-lighten-1  !important;
+      }
+    }
+
+    &-darken {
+      &-4 {
+        border: 1px solid $pink-darken-4 !important;
+      }
+      &-3 {
+        border: 1px solid $pink-darken-3 !important;
+      }
+      &-2 {
+        border: 1px solid $pink-darken-2 !important;
+      }
+      &-1 {
+        border: 1px solid $pink-darken-1 !important;
+      }
+    }
+
+    &-accent {
+      &-4 {
+        border: 1px solid $pink-accent-4 !important;
+      }
+      &-3 {
+        border: 1px solid $pink-accent-3 !important;
+      }
+      &-2 {
+        border: 1px solid $pink-accent-2 !important;
+      }
+      &-1 {
+        border: 1px solid $pink-accent-1 !important;
+      }
+    }
+  }
+  &-purple {
+    border: 1px solid $purple-purple !important;
+    &-lighten {
+      &-5 {
+        border: 1px solid $purple-lighten-5 !important;
+      }
+      &-4 {
+        border: 1px solid $purple-lighten-4 !important;
+      }
+      &-3 {
+        border: 1px solid $purple-lighten-3 !important;
+      }
+      &-2 {
+        border: 1px solid $purple-lighten-2 !important;
+      }
+      &-1 {
+        border: 1px solid $purple-lighten-1 !important;
+      }
+    }
+
+    &-darken {
+      &-4 {
+        border: 1px solid $purple-darken-4 !important;
+      }
+      &-3 {
+        border: 1px solid $purple-darken-3 !important;
+      }
+      &-2 {
+        border: 1px solid $purple-darken-2 !important;
+      }
+      &-1 {
+        border: 1px solid $purple-darken-1 !important;
+      }
+    }
+
+    &-accent {
+      &-4 {
+        border: 1px solid $purple-accent-4 !important;
+      }
+      &-3 {
+        border: 1px solid $purple-accent-3 !important;
+      }
+      &-2 {
+        border: 1px solid $purple-accent-2 !important;
+      }
+      &-1 {
+        border: 1px solid $purple-accent-1 !important;
+      }
+    }
+  }
+  &-deep-purple {
+    border: 1px solid $purple-purple !important;
+    &-lighten {
+      &-5 {
+        border: 1px solid $deep-purple-lighten-5 !important;
+      }
+      &-4 {
+        border: 1px solid $deep-purple-lighten-4 !important;
+      }
+      &-3 {
+        border: 1px solid $deep-purple-lighten-3 !important;
+      }
+      &-2 {
+        border: 1px solid $deep-purple-lighten-2 !important;
+      }
+      &-1 {
+        border: 1px solid $deep-purple-lighten-1 !important;
+      }
+    }
+
+    &-darken {
+      &-4 {
+        border: 1px solid $deep-purple-darken-4 !important;
+      }
+      &-3 {
+        border: 1px solid $deep-purple-darken-3 !important;
+      }
+      &-2 {
+        border: 1px solid $deep-purple-darken-2 !important;
+      }
+      &-1 {
+        border: 1px solid $deep-purple-darken-1 !important;
+      }
+    }
+
+    &-accent {
+      &-4 {
+        border: 1px solid $deep-purple-accent-4 !important;
+      }
+      &-3 {
+        border: 1px solid $deep-purple-accent-3 !important;
+      }
+      &-2 {
+        border: 1px solid $deep-purple-accent-2 !important;
+      }
+      &-1 {
+        border: 1px solid $deep-purple-accent-1 !important;
+      }
+    }
+  }
+  &-indigo {
+    border: 1px solid $indigo-indigo !important;
+    &-lighten {
+      &-5 {
+        border: 1px solid $indigo-lighten-5 !important;
+      }
+      &-4 {
+        border: 1px solid $indigo-lighten-4 !important;
+      }
+      &-3 {
+        border: 1px solid $indigo-lighten-3 !important;
+      }
+      &-2 {
+        border: 1px solid $indigo-lighten-2 !important;
+      }
+      &-1 {
+        border: 1px solid $indigo-lighten-1 !important;
+      }
+    }
+
+    &-darken {
+      &-4 {
+        border: 1px solid $indigo-darken-4 !important;
+      }
+      &-3 {
+        border: 1px solid $indigo-darken-3 !important;
+      }
+      &-2 {
+        border: 1px solid $indigo-darken-2 !important;
+      }
+      &-1 {
+        border: 1px solid $indigo-darken-1 !important;
+      }
+    }
+
+    &-accent {
+      &-4 {
+        border: 1px solid $indigo-accent-4 !important;
+      }
+      &-3 {
+        border: 1px solid $indigo-accent-3 !important;
+      }
+      &-2 {
+        border: 1px solid $indigo-accent-2 !important;
+      }
+      &-1 {
+        border: 1px solid $indigo-accent-1 !important;
+      }
+    }
+  }
+  &-blue {
+    border: 1px solid $blue-blue !important;
+    &-lighten {
+      &-5 {
+        border: 1px solid $blue-lighten-5 !important;
+      }
+      &-4 {
+        border: 1px solid $blue-lighten-4 !important;
+      }
+      &-3 {
+        border: 1px solid $blue-lighten-3 !important;
+      }
+      &-2 {
+        border: 1px solid $blue-lighten-2 !important;
+      }
+      &-1 {
+        border: 1px solid $blue-lighten-1 !important;
+      }
+    }
+
+    &-darken {
+      &-4 {
+        border: 1px solid $blue-darken-4  !important;
+      }
+      &-3 {
+        border: 1px solid $blue-darken-3  !important;
+      }
+      &-2 {
+        border: 1px solid $blue-darken-2  !important;
+      }
+      &-1 {
+        border: 1px solid $blue-darken-1  !important;
+      }
+    }
+
+    &-accent {
+      &-4 {
+        border: 1px solid $blue-accent-4  !important;
+      }
+      &-3 {
+        border: 1px solid $blue-accent-3  !important;
+      }
+      &-2 {
+        border: 1px solid $blue-accent-2  !important;
+      }
+      &-1 {
+        border: 1px solid $blue-accent-1  !important;
+      }
+    }
+  }
+  &-light-blue {
+    border: 1px solid $light-blue-light-blue  !important;
+
+    &-lighten {
+      &-5 {
+        border: 1px solid $light-blue-lighten-5 !important;
+      }
+      &-4 {
+        border: 1px solid $light-blue-lighten-4 !important;
+      }
+      &-3 {
+        border: 1px solid $light-blue-lighten-3 !important;
+      }
+      &-2 {
+        border: 1px solid $light-blue-lighten-2 !important;
+      }
+      &-1 {
+        border: 1px solid $light-blue-lighten-1 !important;
+      }
+    }
+
+    &-darken {
+      &-4 {
+        border: 1px solid $light-blue-darken-4 !important;
+      }
+      &-3 {
+        border: 1px solid $light-blue-darken-3 !important;
+      }
+      &-2 {
+        border: 1px solid $light-blue-darken-2 !important;
+      }
+      &-1 {
+        border: 1px solid $light-blue-darken-1 !important;
+      }
+    }
+
+    &-accent {
+      &-4 {
+        border: 1px solid $light-blue-accent-4 !important;
+      }
+      &-3 {
+        border: 1px solid $light-blue-accent-3 !important;
+      }
+      &-2 {
+        border: 1px solid $light-blue-accent-2 !important;
+      }
+      &-1 {
+        border: 1px solid $light-blue-accent-1 !important;
+      }
+    }
+  }
+
+  &-cyan {
+    border: 1px solid $cyan-cyan !important;
+    &-lighten {
+      &-5 {
+        border: 1px solid $cyan-lighten-5 !important;
+      }
+      &-4 {
+        border: 1px solid $cyan-lighten-4 !important;
+      }
+      &-3 {
+        border: 1px solid $cyan-lighten-3 !important;
+      }
+      &-2 {
+        border: 1px solid $cyan-lighten-2 !important;
+      }
+      &-1 {
+        border: 1px solid $cyan-lighten-1 !important;
+      }
+    }
+
+    &-darken {
+      &-4 {
+        border: 1px solid $cyan-darken-4 !important;
+      }
+      &-3 {
+        border: 1px solid $cyan-darken-3 !important;
+      }
+      &-2 {
+        border: 1px solid $cyan-darken-2 !important;
+      }
+      &-1 {
+        border: 1px solid $cyan-darken-1 !important;
+      }
+    }
+
+    &-accent {
+      &-4 {
+        border: 1px solid $cyan-accent-4 !important;
+      }
+      &-3 {
+        border: 1px solid $cyan-accent-3 !important;
+      }
+      &-2 {
+        border: 1px solid $cyan-accent-2 !important;
+      }
+      &-1 {
+        border: 1px solid $cyan-accent-1 !important;
+      }
+    }
+
+  }
+
+  &-teal {
+    border: 1px solid $teal-teal !important;
+
+    &-lighten {
+      &-5 {
+        border: 1px solid $teal-lighten-5 !important;
+      }
+      &-4 {
+        border: 1px solid $teal-lighten-4 !important;
+      }
+      &-3 {
+        border: 1px solid $teal-lighten-3 !important;
+      }
+      &-2 {
+        border: 1px solid $teal-lighten-2 !important;
+      }
+      &-1 {
+        border: 1px solid $teal-lighten-1 !important;
+      }
+    }
+
+    &-darken {
+      &-4 {
+        border: 1px solid $teal-darken-4 !important;
+      }
+      &-3 {
+        border: 1px solid $teal-darken-3 !important;
+      }
+      &-2 {
+        border: 1px solid $teal-darken-2 !important;
+      }
+      &-1 {
+        border: 1px solid $teal-darken-1 !important;
+      }
+    }
+
+    &-accent {
+      &-4 {
+        border: 1px solid $teal-accent-4 !important;
+      }
+      &-3 {
+        border: 1px solid $teal-accent-3 !important;
+      }
+      &-2 {
+        border: 1px solid $teal-accent-2 !important;
+      }
+      &-1 {
+        border: 1px solid $teal-accent-1 !important;
+      }
+    }
+  }
+
+  &-green {
+    border: 1px solid $green-green !important;
+
+    &-lighten {
+      &-5 {
+        border: 1px solid $green-lighten-5 !important;
+      }
+      &-4 {
+        border: 1px solid $green-lighten-4 !important;
+      }
+      &-3 {
+        border: 1px solid $green-lighten-3 !important;
+      }
+      &-2 {
+        border: 1px solid $green-lighten-2 !important;
+      }
+      &-1 {
+        border: 1px solid $green-lighten-1 !important;
+      }
+    }
+
+    &-darken {
+      &-4 {
+        border: 1px solid $green-darken-4 !important;
+      }
+      &-3 {
+        border: 1px solid $green-darken-3 !important;
+      }
+      &-2 {
+        border: 1px solid $green-darken-2 !important;
+      }
+      &-1 {
+        border: 1px solid $green-darken-1 !important;
+      }
+    }
+
+    &-accent {
+      &-4 {
+        border: 1px solid $green-accent-4 !important;
+      }
+      &-3 {
+        border: 1px solid $green-accent-3 !important;
+      }
+      &-2 {
+        border: 1px solid $green-accent-2 !important;
+      }
+      &-1 {
+        border: 1px solid $green-accent-1 !important;
+      }
+    }
+  }
+  &-light-green {
+    border: 1px solid $light-green-light-green !important;
+
+    &-lighten {
+      &-5 {
+        border: 1px solid $light-green-lighten-5 !important;
+      }
+      &-4 {
+        border: 1px solid $light-green-lighten-4 !important;
+      }
+      &-3 {
+        border: 1px solid $light-green-lighten-3 !important;
+      }
+      &-2 {
+        border: 1px solid $light-green-lighten-2 !important;
+      }
+      &-1 {
+        border: 1px solid $light-green-lighten-1 !important;
+      }
+    }
+
+    &-darken {
+      &-4 {
+        border: 1px solid $light-green-darken-4 !important;
+      }
+      &-3 {
+        border: 1px solid $light-green-darken-3 !important;
+      }
+      &-2 {
+        border: 1px solid $light-green-darken-2 !important;
+      }
+      &-1 {
+        border: 1px solid $light-green-darken-1 !important;
+      }
+    }
+
+    &-accent {
+      &-4 {
+        border: 1px solid $light-green-accent-4 !important;
+      }
+      &-3 {
+        border: 1px solid $light-green-accent-3 !important;
+      }
+      &-2 {
+        border: 1px solid $light-green-accent-2 !important;
+      }
+      &-1 {
+        border: 1px solid $light-green-accent-1 !important;
+      }
+    }
+  }
+  &-lime {
+    border: 1px solid $lime-lime !important;
+
+    &-lighten {
+      &-5 {
+        border: 1px solid $lime-lighten-5 !important;
+      }
+      &-4 {
+        border: 1px solid $lime-lighten-4 !important;
+      }
+      &-3 {
+        border: 1px solid $lime-lighten-3 !important;
+      }
+      &-2 {
+        border: 1px solid $lime-lighten-2 !important;
+      }
+      &-1 {
+        border: 1px solid $lime-lighten-1 !important;
+      }
+    }
+
+    &-darken {
+      &-4 {
+        border: 1px solid $lime-darken-4 !important;
+      }
+      &-3 {
+        border: 1px solid $lime-darken-3 !important;
+      }
+      &-2 {
+        border: 1px solid $lime-darken-2 !important;
+      }
+      &-1 {
+        border: 1px solid $lime-darken-1 !important;
+      }
+    }
+
+    &-accent {
+      &-4 {
+        border: 1px solid $lime-accent-4 !important;
+      }
+      &-3 {
+        border: 1px solid $lime-accent-3 !important;
+      }
+      &-2 {
+        border: 1px solid $lime-accent-2 !important;
+      }
+      &-1 {
+        border: 1px solid $lime-accent-1 !important;
+      }
+    }
+  }
+
+  &-yellow {
+    border: 1px solid $yellow-yellow !important;
+
+    &-lighten {
+      &-5 {
+        border: 1px solid $yellow-lighten-5 !important;
+      }
+      &-4 {
+        border: 1px solid $yellow-lighten-4 !important;
+      }
+      &-3 {
+        border: 1px solid $yellow-lighten-3 !important;
+      }
+      &-2 {
+        border: 1px solid $yellow-lighten-2 !important;
+      }
+      &-1 {
+        border: 1px solid $yellow-lighten-1 !important;
+      }
+    }
+
+    &-darken {
+      &-4 {
+        border: 1px solid $yellow-darken-4 !important;
+      }
+      &-3 {
+        border: 1px solid $yellow-darken-3 !important;
+      }
+      &-2 {
+        border: 1px solid $yellow-darken-2 !important;
+      }
+      &-1 {
+        border: 1px solid $yellow-darken-1 !important;
+      }
+    }
+
+    &-accent {
+      &-4 {
+        border: 1px solid $yellow-accent-4 !important;
+      }
+      &-3 {
+        border: 1px solid $yellow-accent-3 !important;
+      }
+      &-2 {
+        border: 1px solid $yellow-accent-2 !important;
+      }
+      &-1 {
+        border: 1px solid $yellow-accent-1 !important;
+      }
+    }
+  }
+  &-amber {
+    border: 1px solid $amber-amber !important;
+
+    &-lighten {
+      &-5 {
+        border: 1px solid $amber-lighten-5 !important;
+      }
+      &-4 {
+        border: 1px solid $amber-lighten-4 !important;
+      }
+      &-3 {
+        border: 1px solid $amber-lighten-3 !important;
+      }
+      &-2 {
+        border: 1px solid $amber-lighten-2 !important;
+      }
+      &-1 {
+        border: 1px solid $amber-lighten-1 !important;
+      }
+    }
+
+    &-darken {
+      &-4 {
+        border: 1px solid $amber-darken-4 !important;
+      }
+      &-3 {
+        border: 1px solid $amber-darken-3 !important;
+      }
+      &-2 {
+        border: 1px solid $amber-darken-2 !important;
+      }
+      &-1 {
+        border: 1px solid $amber-darken-1 !important;
+      }
+    }
+
+    &-accent {
+      &-4 {
+        border: 1px solid $amber-accent-4 !important;
+      }
+      &-3 {
+        border: 1px solid $amber-accent-3 !important;
+      }
+      &-2 {
+        border: 1px solid $amber-accent-2 !important;
+      }
+      &-1 {
+        border: 1px solid $amber-accent-1 !important;
+      }
+    }
+  }
+  &-orange {
+    border: 1px solid $orange-orange !important;
+
+    &-lighten {
+      &-5 {
+        border: 1px solid $orange-lighten-5 !important;
+      }
+      &-4 {
+        border: 1px solid $orange-lighten-4 !important;
+      }
+      &-3 {
+        border: 1px solid $orange-lighten-3 !important;
+      }
+      &-2 {
+        border: 1px solid $orange-lighten-2 !important;
+      }
+      &-1 {
+        border: 1px solid $orange-lighten-1 !important;
+      }
+    }
+
+    &-darken {
+      &-4 {
+        border: 1px solid $orange-darken-4 !important;
+      }
+      &-3 {
+        border: 1px solid $orange-darken-3 !important;
+      }
+      &-2 {
+        border: 1px solid $orange-darken-2 !important;
+      }
+      &-1 {
+        border: 1px solid $orange-darken-1 !important;
+      }
+    }
+
+    &-accent {
+      &-4 {
+        border: 1px solid $orange-accent-4 !important;
+      }
+      &-3 {
+        border: 1px solid $orange-accent-3 !important;
+      }
+      &-2 {
+        border: 1px solid $orange-accent-2 !important;
+      }
+      &-1 {
+        border: 1px solid $orange-accent-1 !important;
+      }
+    }
+  }
+  &-deep-orange {
+    border: 1px solid $deep-orange-deep-orange !important;
+
+    &-lighten {
+      &-5 {
+        border: 1px solid $deep-orange-lighten-5 !important;
+      }
+      &-4 {
+        border: 1px solid $deep-orange-lighten-4 !important;
+      }
+      &-3 {
+        border: 1px solid $deep-orange-lighten-3 !important;
+      }
+      &-2 {
+        border: 1px solid $deep-orange-lighten-2 !important;
+      }
+      &-1 {
+        border: 1px solid $deep-orange-lighten-1 !important;
+      }
+    }
+
+    &-darken {
+      &-4 {
+        border: 1px solid $deep-orange-darken-4 !important;
+      }
+      &-3 {
+        border: 1px solid $deep-orange-darken-3 !important;
+      }
+      &-2 {
+        border: 1px solid $deep-orange-darken-2 !important;
+      }
+      &-1 {
+        border: 1px solid $deep-orange-darken-1 !important;
+      }
+    }
+
+    &-accent {
+      &-4 {
+        border: 1px solid $deep-orange-accent-4 !important;
+      }
+      &-3 {
+        border: 1px solid $deep-orange-accent-3 !important;
+      }
+      &-2 {
+        border: 1px solid $deep-orange-accent-2 !important;
+      }
+      &-1 {
+        border: 1px solid $deep-orange-accent-1 !important;
+      }
+    }
+  }
+
+  &-brown {
+    border: 1px solid $brown-brown !important;
+
+    &-lighten {
+      &-5 {
+        border: 1px solid $brown-lighten-5 !important;
+      }
+      &-4 {
+        border: 1px solid $brown-lighten-4 !important;
+      }
+      &-3 {
+        border: 1px solid $brown-lighten-3 !important;
+      }
+      &-2 {
+        border: 1px solid $brown-lighten-2 !important;
+      }
+      &-1 {
+        border: 1px solid $brown-lighten-1 !important;
+      }
+    }
+
+    &-darken {
+      &-4 {
+        border: 1px solid $brown-darken-4 !important;
+      }
+      &-3 {
+        border: 1px solid $brown-darken-3 !important;
+      }
+      &-2 {
+        border: 1px solid $brown-darken-2 !important;
+      }
+      &-1 {
+        border: 1px solid $brown-darken-1 !important;
+      }
+    }
+
+  }
+
+  &-blue-grey {
+    border: 1px solid $blue-grey-blue-grey !important;
+
+    &-lighten {
+      &-5 {
+        border: 1px solid $blue-grey-lighten-5 !important;
+      }
+      &-4 {
+        border: 1px solid $blue-grey-lighten-4 !important;
+      }
+      &-3 {
+        border: 1px solid $blue-grey-lighten-3 !important;
+      }
+      &-2 {
+        border: 1px solid $blue-grey-lighten-2 !important;
+      }
+      &-1 {
+        border: 1px solid $blue-grey-lighten-1 !important;
+      }
+    }
+
+    &-darken {
+      &-4 {
+        border: 1px solid $blue-grey-darken-4 !important;
+      }
+      &-3 {
+        border: 1px solid $blue-grey-darken-3 !important;
+      }
+      &-2 {
+        border: 1px solid $blue-grey-darken-2 !important;
+      }
+      &-1 {
+        border: 1px solid $blue-grey-darken-1 !important;
+      }
+    }
+  }
+
+  &-grey {
+    border: 1px solid $grey-grey !important;
+
+    &-lighten {
+      &-5 {
+        border: 1px solid $grey-lighten-5 !important;
+      }
+      &-4 {
+        border: 1px solid $grey-lighten-4 !important;
+      }
+      &-3 {
+        border: 1px solid $grey-lighten-3 !important;
+      }
+      &-2 {
+        border: 1px solid $grey-lighten-2 !important;
+      }
+      &-1 {
+        border: 1px solid $grey-lighten-1 !important;
+      }
+    }
+
+    &-darken {
+      &-4 {
+        border: 1px solid $grey-darken-4 !important;
+      }
+      &-3 {
+        border: 1px solid $grey-darken-3 !important;
+      }
+      &-2 {
+        border: 1px solid $grey-darken-2 !important;
+      }
+      &-1 {
+        border: 1px solid $grey-darken-1 !important;
+      }
+    }
+
+  }
+
+  &-black {
+    border: 1px solid $shades-black !important;
+  }
+  &-white {
+    border: 1px solid $shades-white !important;
+  }
+
+  &-primary {
+    border: 1px solid $custom-primary !important;
+  }
+
+  &-secondary {
+    border: 1px solid $custom-secondary !important;
+  }
+
+  &-accent {
+    border: 1px solid $custom-accent !important;
+  }
+
+  &-error {
+    border: 1px solid $custom-error !important;
+  }
+
+  &-info {
+    border: 1px solid $custom-info !important;
+  }
+
+  &-success {
+    border: 1px solid $custom-success !important;
+  }
+
+  &-warning {
+    border: 1px solid $custom-warning !important;
+  }
+}

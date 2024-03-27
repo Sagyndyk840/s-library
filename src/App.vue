@@ -5,7 +5,7 @@ import SButton from "@/components/button/SButton.vue";
 <template>
   <div class="wrapper">
 
-    <SButton />
+    <SButton outlined  color="red" text-color="black"/>
 
   </div>
 </template>

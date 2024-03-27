@@ -5,7 +5,7 @@ export interface SkyButtonProps {
     size: BtnSize, //
     rounded: BtnRounded, //
     align: BtnAlign, //
-    outlined: boolean,
+    outlined: boolean, //
     loading: boolean,
     color:  Colors, //
     textColor: Colors, //
