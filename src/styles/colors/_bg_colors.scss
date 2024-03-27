@@ -1,0 +1,964 @@
+.bg {
+  &-red {
+    background-color: $red-red;
+    &-lighten {
+      &-5 {
+        background-color: $red-lighten-5;
+      }
+      &-4 {
+        background-color: $red-lighten-4;
+      }
+      &-3 {
+        background-color: $red-lighten-3;
+      }
+      &-2 {
+        background-color: $red-lighten-2;
+      }
+      &-1 {
+        background-color: $red-lighten-1;
+      }
+    }
+
+    &-darken {
+      &-4 {
+        background-color: $red-darken-4;
+      }
+      &-3 {
+        background-color: $red-darken-3;
+      }
+      &-2 {
+        background-color: $red-darken-2;
+      }
+      &-1 {
+        background-color: $red-darken-1;
+      }
+    }
+
+    &-accent {
+      &-4 {
+        background-color: $red-accent-4;
+      }
+      &-3 {
+        background-color: $red-accent-3;
+      }
+      &-2 {
+        background-color: $red-accent-2;
+      }
+      &-1 {
+        background-color: $red-accent-1;
+      }
+    }
+  }
+  &-pink {
+    background-color: $pink-pink;
+    &-lighten {
+      &-5 {
+        background-color: $pink-lighten-5;
+      }
+      &-4 {
+        background-color: $pink-lighten-4;
+      }
+      &-3 {
+        background-color: $pink-lighten-3;
+      }
+      &-2 {
+        background-color: $pink-lighten-2;
+      }
+      &-1 {
+        background-color: $pink-lighten-1;
+      }
+    }
+
+    &-darken {
+      &-4 {
+        background-color: $pink-darken-4;
+      }
+      &-3 {
+        background-color: $pink-darken-3;
+      }
+      &-2 {
+        background-color: $pink-darken-2;
+      }
+      &-1 {
+        background-color: $pink-darken-1;
+      }
+    }
+
+    &-accent {
+      &-4 {
+        background-color: $pink-accent-4;
+      }
+      &-3 {
+        background-color: $pink-accent-3;
+      }
+      &-2 {
+        background-color: $pink-accent-2;
+      }
+      &-1 {
+        background-color: $pink-accent-1;
+      }
+    }
+  }
+  &-purple {
+    background-color: $purple-purple;
+    &-lighten {
+      &-5 {
+        background-color: $purple-lighten-5;
+      }
+      &-4 {
+        background-color: $purple-lighten-4;
+      }
+      &-3 {
+        background-color: $purple-lighten-3;
+      }
+      &-2 {
+        background-color: $purple-lighten-2;
+      }
+      &-1 {
+        background-color: $purple-lighten-1;
+      }
+    }
+
+    &-darken {
+      &-4 {
+        background-color: $purple-darken-4;
+      }
+      &-3 {
+        background-color: $purple-darken-3;
+      }
+      &-2 {
+        background-color: $purple-darken-2;
+      }
+      &-1 {
+        background-color: $purple-darken-1;
+      }
+    }
+
+    &-accent {
+      &-4 {
+        background-color: $purple-accent-4;
+      }
+      &-3 {
+        background-color: $purple-accent-3;
+      }
+      &-2 {
+        background-color: $purple-accent-2;
+      }
+      &-1 {
+        background-color: $purple-accent-1;
+      }
+    }
+  }
+  &-deep-purple {
+    background-color: $purple-purple;
+    &-lighten {
+      &-5 {
+        background-color: $deep-purple-lighten-5;
+      }
+      &-4 {
+        background-color: $deep-purple-lighten-4;
+      }
+      &-3 {
+        background-color: $deep-purple-lighten-3;
+      }
+      &-2 {
+        background-color: $deep-purple-lighten-2;
+      }
+      &-1 {
+        background-color: $deep-purple-lighten-1;
+      }
+    }
+
+    &-darken {
+      &-4 {
+        background-color: $deep-purple-darken-4;
+      }
+      &-3 {
+        background-color: $deep-purple-darken-3;
+      }
+      &-2 {
+        background-color: $deep-purple-darken-2;
+      }
+      &-1 {
+        background-color: $deep-purple-darken-1;
+      }
+    }
+
+    &-accent {
+      &-4 {
+        background-color: $deep-purple-accent-4;
+      }
+      &-3 {
+        background-color: $deep-purple-accent-3;
+      }
+      &-2 {
+        background-color: $deep-purple-accent-2;
+      }
+      &-1 {
+        background-color: $deep-purple-accent-1;
+      }
+    }
+  }
+  &-indigo {
+    background-color: $indigo-indigo;
+    &-lighten {
+      &-5 {
+        background-color: $indigo-lighten-5;
+      }
+      &-4 {
+        background-color: $indigo-lighten-4;
+      }
+      &-3 {
+        background-color: $indigo-lighten-3;
+      }
+      &-2 {
+        background-color: $indigo-lighten-2;
+      }
+      &-1 {
+        background-color: $indigo-lighten-1;
+      }
+    }
+
+    &-darken {
+      &-4 {
+        background-color: $indigo-darken-4;
+      }
+      &-3 {
+        background-color: $indigo-darken-3;
+      }
+      &-2 {
+        background-color: $indigo-darken-2;
+      }
+      &-1 {
+        background-color: $indigo-darken-1;
+      }
+    }
+
+    &-accent {
+      &-4 {
+        background-color: $indigo-accent-4;
+      }
+      &-3 {
+        background-color: $indigo-accent-3;
+      }
+      &-2 {
+        background-color: $indigo-accent-2;
+      }
+      &-1 {
+        background-color: $indigo-accent-1;
+      }
+    }
+  }
+  &-blue {
+    background-color: $blue-blue;
+    &-lighten {
+      &-5 {
+        background-color: $blue-lighten-5;
+      }
+      &-4 {
+        background-color: $blue-lighten-4;
+      }
+      &-3 {
+        background-color: $blue-lighten-3;
+      }
+      &-2 {
+        background-color: $blue-lighten-2;
+      }
+      &-1 {
+        background-color: $blue-lighten-1;
+      }
+    }
+
+    &-darken {
+      &-4 {
+        background-color: $blue-darken-4;
+      }
+      &-3 {
+        background-color: $blue-darken-3;
+      }
+      &-2 {
+        background-color: $blue-darken-2;
+      }
+      &-1 {
+        background-color: $blue-darken-1;
+      }
+    }
+
+    &-accent {
+      &-4 {
+        background-color: $blue-accent-4;
+      }
+      &-3 {
+        background-color: $blue-accent-3;
+      }
+      &-2 {
+        background-color: $blue-accent-2;
+      }
+      &-1 {
+        background-color: $blue-accent-1;
+      }
+    }
+  }
+  &-light-blue {
+    background-color: $light-blue-light-blue;
+
+    &-lighten {
+      &-5 {
+        background-color: $light-blue-lighten-5;
+      }
+      &-4 {
+        background-color: $light-blue-lighten-4;
+      }
+      &-3 {
+        background-color: $light-blue-lighten-3;
+      }
+      &-2 {
+        background-color: $light-blue-lighten-2;
+      }
+      &-1 {
+        background-color: $light-blue-lighten-1;
+      }
+    }
+
+    &-darken {
+      &-4 {
+        background-color: $light-blue-darken-4;
+      }
+      &-3 {
+        background-color: $light-blue-darken-3;
+      }
+      &-2 {
+        background-color: $light-blue-darken-2;
+      }
+      &-1 {
+        background-color: $light-blue-darken-1;
+      }
+    }
+
+    &-accent {
+      &-4 {
+        background-color: $light-blue-accent-4;
+      }
+      &-3 {
+        background-color: $light-blue-accent-3;
+      }
+      &-2 {
+        background-color: $light-blue-accent-2;
+      }
+      &-1 {
+        background-color: $light-blue-accent-1;
+      }
+    }
+  }
+
+  &-cyan {
+    background-color: $cyan-cyan;
+    &-lighten {
+      &-5 {
+        background-color: $cyan-lighten-5;
+      }
+      &-4 {
+        background-color: $cyan-lighten-4;
+      }
+      &-3 {
+        background-color: $cyan-lighten-3;
+      }
+      &-2 {
+        background-color: $cyan-lighten-2;
+      }
+      &-1 {
+        background-color: $cyan-lighten-1;
+      }
+    }
+
+    &-darken {
+      &-4 {
+        background-color: $cyan-darken-4;
+      }
+      &-3 {
+        background-color: $cyan-darken-3;
+      }
+      &-2 {
+        background-color: $cyan-darken-2;
+      }
+      &-1 {
+        background-color: $cyan-darken-1;
+      }
+    }
+
+    &-accent {
+      &-4 {
+        background-color: $cyan-accent-4;
+      }
+      &-3 {
+        background-color: $cyan-accent-3;
+      }
+      &-2 {
+        background-color: $cyan-accent-2;
+      }
+      &-1 {
+        background-color: $cyan-accent-1;
+      }
+    }
+
+  }
+
+  &-teal {
+    background-color: $teal-teal;
+
+    &-lighten {
+      &-5 {
+        background-color: $teal-lighten-5;
+      }
+      &-4 {
+        background-color: $teal-lighten-4;
+      }
+      &-3 {
+        background-color: $teal-lighten-3;
+      }
+      &-2 {
+        background-color: $teal-lighten-2;
+      }
+      &-1 {
+        background-color: $teal-lighten-1;
+      }
+    }
+
+    &-darken {
+      &-4 {
+        background-color: $teal-darken-4;
+      }
+      &-3 {
+        background-color: $teal-darken-3;
+      }
+      &-2 {
+        background-color: $teal-darken-2;
+      }
+      &-1 {
+        background-color: $teal-darken-1;
+      }
+    }
+
+    &-accent {
+      &-4 {
+        background-color: $teal-accent-4;
+      }
+      &-3 {
+        background-color: $teal-accent-3;
+      }
+      &-2 {
+        background-color: $teal-accent-2;
+      }
+      &-1 {
+        background-color: $teal-accent-1;
+      }
+    }
+  }
+
+  &-green {
+    background-color: $green-green;
+
+    &-lighten {
+      &-5 {
+        background-color: $green-lighten-5;
+      }
+      &-4 {
+        background-color: $green-lighten-4;
+      }
+      &-3 {
+        background-color: $green-lighten-3;
+      }
+      &-2 {
+        background-color: $green-lighten-2;
+      }
+      &-1 {
+        background-color: $green-lighten-1;
+      }
+    }
+
+    &-darken {
+      &-4 {
+        background-color: $green-darken-4;
+      }
+      &-3 {
+        background-color: $green-darken-3;
+      }
+      &-2 {
+        background-color: $green-darken-2;
+      }
+      &-1 {
+        background-color: $green-darken-1;
+      }
+    }
+
+    &-accent {
+      &-4 {
+        background-color: $green-accent-4;
+      }
+      &-3 {
+        background-color: $green-accent-3;
+      }
+      &-2 {
+        background-color: $green-accent-2;
+      }
+      &-1 {
+        background-color: $green-accent-1;
+      }
+    }
+  }
+  &-light-green {
+    background-color: $light-green-light-green;
+
+    &-lighten {
+      &-5 {
+        background-color: $light-green-lighten-5;
+      }
+      &-4 {
+        background-color: $light-green-lighten-4;
+      }
+      &-3 {
+        background-color: $light-green-lighten-3;
+      }
+      &-2 {
+        background-color: $light-green-lighten-2;
+      }
+      &-1 {
+        background-color: $light-green-lighten-1;
+      }
+    }
+
+    &-darken {
+      &-4 {
+        background-color: $light-green-darken-4;
+      }
+      &-3 {
+        background-color: $light-green-darken-3;
+      }
+      &-2 {
+        background-color: $light-green-darken-2;
+      }
+      &-1 {
+        background-color: $light-green-darken-1;
+      }
+    }
+
+    &-accent {
+      &-4 {
+        background-color: $light-green-accent-4;
+      }
+      &-3 {
+        background-color: $light-green-accent-3;
+      }
+      &-2 {
+        background-color: $light-green-accent-2;
+      }
+      &-1 {
+        background-color: $light-green-accent-1;
+      }
+    }
+  }
+  &-lime {
+    background-color: $lime-lime;
+
+    &-lighten {
+      &-5 {
+        background-color: $lime-lighten-5;
+      }
+      &-4 {
+        background-color: $lime-lighten-4;
+      }
+      &-3 {
+        background-color: $lime-lighten-3;
+      }
+      &-2 {
+        background-color: $lime-lighten-2;
+      }
+      &-1 {
+        background-color: $lime-lighten-1;
+      }
+    }
+
+    &-darken {
+      &-4 {
+        background-color: $lime-darken-4;
+      }
+      &-3 {
+        background-color: $lime-darken-3;
+      }
+      &-2 {
+        background-color: $lime-darken-2;
+      }
+      &-1 {
+        background-color: $lime-darken-1;
+      }
+    }
+
+    &-accent {
+      &-4 {
+        background-color: $lime-accent-4;
+      }
+      &-3 {
+        background-color: $lime-accent-3;
+      }
+      &-2 {
+        background-color: $lime-accent-2;
+      }
+      &-1 {
+        background-color: $lime-accent-1;
+      }
+    }
+  }
+
+  &-yellow {
+    background-color: $yellow-yellow;
+
+    &-lighten {
+      &-5 {
+        background-color: $yellow-lighten-5;
+      }
+      &-4 {
+        background-color: $yellow-lighten-4;
+      }
+      &-3 {
+        background-color: $yellow-lighten-3;
+      }
+      &-2 {
+        background-color: $yellow-lighten-2;
+      }
+      &-1 {
+        background-color: $yellow-lighten-1;
+      }
+    }
+
+    &-darken {
+      &-4 {
+        background-color: $yellow-darken-4;
+      }
+      &-3 {
+        background-color: $yellow-darken-3;
+      }
+      &-2 {
+        background-color: $yellow-darken-2;
+      }
+      &-1 {
+        background-color: $yellow-darken-1;
+      }
+    }
+
+    &-accent {
+      &-4 {
+        background-color: $yellow-accent-4;
+      }
+      &-3 {
+        background-color: $yellow-accent-3;
+      }
+      &-2 {
+        background-color: $yellow-accent-2;
+      }
+      &-1 {
+        background-color: $yellow-accent-1;
+      }
+    }
+  }
+  &-amber {
+    background-color: $amber-amber;
+
+    &-lighten {
+      &-5 {
+        background-color: $amber-lighten-5;
+      }
+      &-4 {
+        background-color: $amber-lighten-4;
+      }
+      &-3 {
+        background-color: $amber-lighten-3;
+      }
+      &-2 {
+        background-color: $amber-lighten-2;
+      }
+      &-1 {
+        background-color: $amber-lighten-1;
+      }
+    }
+
+    &-darken {
+      &-4 {
+        background-color: $amber-darken-4;
+      }
+      &-3 {
+        background-color: $amber-darken-3;
+      }
+      &-2 {
+        background-color: $amber-darken-2;
+      }
+      &-1 {
+        background-color: $amber-darken-1;
+      }
+    }
+
+    &-accent {
+      &-4 {
+        background-color: $amber-accent-4;
+      }
+      &-3 {
+        background-color: $amber-accent-3;
+      }
+      &-2 {
+        background-color: $amber-accent-2;
+      }
+      &-1 {
+        background-color: $amber-accent-1;
+      }
+    }
+  }
+  &-orange {
+    background-color: $orange-orange;
+
+    &-lighten {
+      &-5 {
+        background-color: $orange-lighten-5;
+      }
+      &-4 {
+        background-color: $orange-lighten-4;
+      }
+      &-3 {
+        background-color: $orange-lighten-3;
+      }
+      &-2 {
+        background-color: $orange-lighten-2;
+      }
+      &-1 {
+        background-color: $orange-lighten-1;
+      }
+    }
+
+    &-darken {
+      &-4 {
+        background-color: $orange-darken-4;
+      }
+      &-3 {
+        background-color: $orange-darken-3;
+      }
+      &-2 {
+        background-color: $orange-darken-2;
+      }
+      &-1 {
+        background-color: $orange-darken-1;
+      }
+    }
+
+    &-accent {
+      &-4 {
+        background-color: $orange-accent-4;
+      }
+      &-3 {
+        background-color: $orange-accent-3;
+      }
+      &-2 {
+        background-color: $orange-accent-2;
+      }
+      &-1 {
+        background-color: $orange-accent-1;
+      }
+    }
+  }
+  &-deep-orange {
+    background-color: $deep-orange-deep-orange;
+
+    &-lighten {
+      &-5 {
+        background-color: $deep-orange-lighten-5;
+      }
+      &-4 {
+        background-color: $deep-orange-lighten-4;
+      }
+      &-3 {
+        background-color: $deep-orange-lighten-3;
+      }
+      &-2 {
+        background-color: $deep-orange-lighten-2;
+      }
+      &-1 {
+        background-color: $deep-orange-lighten-1;
+      }
+    }
+
+    &-darken {
+      &-4 {
+        background-color: $deep-orange-darken-4;
+      }
+      &-3 {
+        background-color: $deep-orange-darken-3;
+      }
+      &-2 {
+        background-color: $deep-orange-darken-2;
+      }
+      &-1 {
+        background-color: $deep-orange-darken-1;
+      }
+    }
+
+    &-accent {
+      &-4 {
+        background-color: $deep-orange-accent-4;
+      }
+      &-3 {
+        background-color: $deep-orange-accent-3;
+      }
+      &-2 {
+        background-color: $deep-orange-accent-2;
+      }
+      &-1 {
+        background-color: $deep-orange-accent-1;
+      }
+    }
+  }
+
+  &-brown {
+    background-color: $brown-brown;
+
+    &-lighten {
+      &-5 {
+        background-color: $brown-lighten-5;
+      }
+      &-4 {
+        background-color: $brown-lighten-4;
+      }
+      &-3 {
+        background-color: $brown-lighten-3;
+      }
+      &-2 {
+        background-color: $brown-lighten-2;
+      }
+      &-1 {
+        background-color: $brown-lighten-1;
+      }
+    }
+
+    &-darken {
+      &-4 {
+        background-color: $brown-darken-4;
+      }
+      &-3 {
+        background-color: $brown-darken-3;
+      }
+      &-2 {
+        background-color: $brown-darken-2;
+      }
+      &-1 {
+        background-color: $brown-darken-1;
+      }
+    }
+
+  }
+
+  &-blue-grey {
+    background-color: $blue-grey-blue-grey;
+
+    &-lighten {
+      &-5 {
+        background-color: $blue-grey-lighten-5;
+      }
+      &-4 {
+        background-color: $blue-grey-lighten-4;
+      }
+      &-3 {
+        background-color: $blue-grey-lighten-3;
+      }
+      &-2 {
+        background-color: $blue-grey-lighten-2;
+      }
+      &-1 {
+        background-color: $blue-grey-lighten-1;
+      }
+    }
+
+    &-darken {
+      &-4 {
+        background-color: $blue-grey-darken-4;
+      }
+      &-3 {
+        background-color: $blue-grey-darken-3;
+      }
+      &-2 {
+        background-color: $blue-grey-darken-2;
+      }
+      &-1 {
+        background-color: $blue-grey-darken-1;
+      }
+    }
+  }
+
+  &-grey {
+    background-color: $grey-grey;
+
+    &-lighten {
+      &-5 {
+        background-color: $grey-lighten-5;
+      }
+      &-4 {
+        background-color: $grey-lighten-4;
+      }
+      &-3 {
+        background-color: $grey-lighten-3;
+      }
+      &-2 {
+        background-color: $grey-lighten-2;
+      }
+      &-1 {
+        background-color: $grey-lighten-1;
+      }
+    }
+
+    &-darken {
+      &-4 {
+        background-color: $grey-darken-4;
+      }
+      &-3 {
+        background-color: $grey-darken-3;
+      }
+      &-2 {
+        background-color: $grey-darken-2;
+      }
+      &-1 {
+        background-color: $grey-darken-1;
+      }
+    }
+
+  }
+
+  &-black {
+    background-color: $shades-black;
+  }
+  &-white {
+    background-color: $shades-white;
+  }
+
+  &-primary {
+    background-color: $custom-primary;
+  }
+
+  &-secondary {
+    background-color: $custom-secondary;
+  }
+
+  &-accent {
+    background-color: $custom-accent;
+  }
+
+  &-error {
+    background-color: $custom-error;
+  }
+
+  &-info {
+    background-color: $custom-info;
+  }
+
+  &-success {
+    background-color: $custom-success;
+  }
+
+  &-warning {
+    background-color: $custom-warning;
+  }
+}
