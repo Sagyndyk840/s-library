@@ -1,7 +1,7 @@
 import colors from "@/utils/colors";
 
 export default interface SkyIconProps {
-    icon: string,
+    icon: string, //
     size: Size,
     color: Colors,
     variant: Icon
