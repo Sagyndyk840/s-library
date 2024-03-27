@@ -1,0 +1,26 @@
+@import 'round_vars';
+
+.rounded {
+  &-0 {
+    border-radius: $rounded-zero;
+  }
+  &-sm {
+    border-radius: $rounded-sm;
+  }
+  &-normal {
+    border-radius: $rounded-normal;
+  }
+  &-lg {
+    border-radius: $rounded-lg;
+  }
+  &-xl {
+    border-radius: $rounded-xl;
+  }
+  &-pill {
+    border-radius: $rounded-pill;
+  }
+  &-circle {
+    border-radius: $rounded-circle;
+  }
+
+}

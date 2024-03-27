@@ -3,5 +3,15 @@ import SButton from "@/components/button/SButton.vue";
 </script>
 
 <template>
-  <SButton text-color="red" color="red-lighten-1">btn</SButton >
+  <div class="wrapper">
+
+    <SButton />
+
+  </div>
 </template>
+
+<style>
+  .wrapper {
+    padding: 20px;
+  }
+</style>

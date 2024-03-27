@@ -1,18 +1,19 @@
 import colors from '@/utils/colors';
 export interface SkyButtonProps {
-    type: BtnType,
+    type: BtnType, //
     density: BtnDensity,
-    size: BtnSize,
-    rounded: BtnRounded,
-    align: BtnAlign,
+    size: BtnSize, //
+    rounded: BtnRounded, //
+    align: BtnAlign, //
     outlined: boolean,
     loading: boolean,
-    color:  Colors,
-    textColor: Colors,
-    label: string,
+    color:  Colors, //
+    textColor: Colors, //
+    label: string, //
     icon?: string,
     iconLeft?: string,
     iconRight?: string,
+    disabled?: boolean
 }
 
 type Colors = typeof colors[number]
@@ -32,15 +33,16 @@ type BtnSize =
     | "small"
     | "large"
     | "x-large"
-    | "regular";
+    | "normal";
 
 type BtnRounded =
     | "0"
-    | "xs"
     | "sm"
-    | "x-large"
+    | "normal"
     | "lg"
-    | "xl";
+    | "xl"
+    | "pill"
+    | "circle";
 
 type BtnAlign =
     | "center"
