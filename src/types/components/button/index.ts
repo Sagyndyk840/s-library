@@ -1,15 +1,15 @@
 import colors from '@/utils/colors';
-export interface SkyButtonProps {
-    type: BtnType, //
-    density: BtnDensity,
-    size: BtnSize, //
-    rounded: BtnRounded, //
-    align: BtnAlign, //
-    outlined: boolean, //
+export default interface SkyButtonProps {
+    type: BtnType, // Ready
+    density: BtnDensity, // Ready
+    size: BtnSize, // Ready
+    rounded: BtnRounded, // Ready
+    align: BtnAlign, // Ready
+    outlined: boolean, // Ready
+    color:  Colors, // Ready
+    textColor: Colors, // Ready
+    label: string, // Ready
     loading: boolean,
-    color:  Colors, //
-    textColor: Colors, //
-    label: string, //
     icon?: string,
     iconLeft?: string,
     iconRight?: string,

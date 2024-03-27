@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import type {SkyButtonProps} from "@/types/components/button";
+import type SkyButtonProps from "@/types/components/button";
+import SIcon from "@/components/icon/SIcon.vue";
 
 const props = withDefaults(defineProps<SkyButtonProps>(), {
   type: "button",
@@ -45,7 +46,10 @@ const click = () => {
       <slot :class="props.textColor">{{ props.label }}</slot>
       <slot name="icon-right"></slot>
     </button>
+    <SIcon />
+
   </div>
+
 </template>
 
 <style scoped lang="scss">
@@ -59,7 +63,6 @@ const click = () => {
     align-items: center;
     letter-spacing: 0.01em;
     text-transform: uppercase;
-
     &-size {
       &-x-small {
         padding: 4px 8px;
