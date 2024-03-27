@@ -1,0 +1,52 @@
+.text {
+  &-red {
+    color: $red-red;
+    &-lighten {
+      &-5 {
+        color: $red-lighten-5;
+      }
+      &-4 {
+        color: $red-lighten-4;
+      }
+      &-3 {
+        color: $red-lighten-3;
+      }
+      &-2 {
+        color: $red-lighten-2;
+      }
+      &-1 {
+        color: $red-lighten-1;
+      }
+    }
+
+    &-darken {
+      &-4 {
+        color: $red-darken-4;
+      }
+      &-3 {
+        color: $red-darken-3;
+      }
+      &-2 {
+        color: $red-darken-2;
+      }
+      &-1 {
+        color: $red-darken-1;
+      }
+    }
+
+    &-accent {
+      &-4 {
+        color: $red-accent-4;
+      }
+      &-3 {
+        color: $red-accent-3;
+      }
+      &-2 {
+        color: $red-accent-2;
+      }
+      &-1 {
+        color: $red-accent-1;
+      }
+    }
+  }
+}

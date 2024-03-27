@@ -12,14 +12,12 @@ const props = withDefaults(defineProps<SkyButtonProps>(), {
   loading: false
 })
 
-console.log(props.color)
-
 </script>
 
 <template>
   <div>
     <button :type="props.type" :class="[
-      props.color,
+      `text-${props.color}`,
       props.align,
       props.size,
       props.rounded,
