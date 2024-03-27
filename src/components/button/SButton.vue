@@ -32,3 +32,6 @@ console.log(props.color)
   </div>
 </template>
 
+<style>
+
+</style>
