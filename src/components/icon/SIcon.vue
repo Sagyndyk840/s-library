@@ -34,7 +34,7 @@ const props = withDefaults(defineProps<SkyIconProps>(), {
       font-size: 22px;
     }
     &-normal {
-      font-size: 24px;
+      font-size: 14px;
     }
   }
 }
