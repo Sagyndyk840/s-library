@@ -57,6 +57,8 @@ const click = () => {
     font-weight: 700;
     display: flex;
     align-items: center;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
 
     &-size {
       &-x-small {
