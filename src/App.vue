@@ -1,11 +1,14 @@
 <script setup lang="ts">
 import SButton from "@/components/button/SButton.vue";
+import SIcon from "@/components/icon/SIcon.vue";
 </script>
 
 <template>
   <div class="wrapper">
 
-    <SButton outlined  color="red" text-color="black"/>
+    <SButton outlined  color="red" text-color="black" >
+
+    </SButton>
 
   </div>
 </template>

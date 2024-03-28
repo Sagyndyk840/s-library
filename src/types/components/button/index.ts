@@ -9,10 +9,10 @@ export default interface SkyButtonProps {
     color:  Colors, // Ready
     textColor: Colors, // Ready
     label: string, // Ready
+    iconLeft?: string, //
+    iconRight?: string, //
     loading: boolean,
     icon?: string,
-    iconLeft?: string,
-    iconRight?: string,
     disabled?: boolean
 }
 

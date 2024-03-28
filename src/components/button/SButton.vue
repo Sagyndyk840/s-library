@@ -40,13 +40,28 @@ const click = () => {
         'disabled': props.disabled
       }
     ]">
-      <slot name="loader"></slot>
-      <slot name="icon"></slot>
-      <slot name="icon-left"></slot>
-      <slot :class="props.textColor">{{ props.label }}</slot>
-      <slot name="icon-right"></slot>
+      <div>
+        <slot name="loader"></slot>
+      </div>
+      <div>
+        <div>
+          <slot name="icon"></slot>
+        </div>
+        <div v-if="!icon || !$slots['icon-left']">
+          <div style="padding-right: 8px;" v-if="$slots['icon-left'] || props.iconLeft">
+            <slot name="icon-left" >
+              <SIcon :color="props.color" v-if="props.iconLeft" :icon="props.iconLeft" :size="props.size" />
+            </slot>
+          </div>
+          <slot :class="props.textColor">{{ props.label }}</slot>
+          <div style="padding-left: 8px;" v-if="$slots['icon-right'] || props.iconRight">
+            <slot name="icon-right" >
+              <SIcon :color="props.color" v-if="props.iconRight" :icon="props.iconRight" :size="props.size" />
+            </slot>
+          </div>
+        </div>
+      </div>
     </button>
-    <SIcon />
 
   </div>
 
