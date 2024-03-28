@@ -6,7 +6,7 @@ import SIcon from "@/components/icon/SIcon.vue";
 <template>
   <div class="wrapper">
 
-    <SButton outlined  color="red" text-color="black" >
+    <SButton outlined  color="red" text-color="black" size="normal" label="Extra large button" icon-left="person">
 
     </SButton>
 

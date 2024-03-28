@@ -47,14 +47,14 @@ const click = () => {
         <div>
           <slot name="icon"></slot>
         </div>
-        <div v-if="!icon || !$slots['icon-left']">
-          <div style="padding-right: 8px;" v-if="$slots['icon-left'] || props.iconLeft">
+        <div v-if="!icon || !$slots['icon-left']" class="flex align-center justify-center">
+          <div style="padding-right: 8px;" v-if="$slots['icon-left'] || props.iconLeft" class="flex align-center justify-center">
             <slot name="icon-left" >
               <SIcon :color="props.color" v-if="props.iconLeft" :icon="props.iconLeft" :size="props.size" />
             </slot>
           </div>
           <slot :class="props.textColor">{{ props.label }}</slot>
-          <div style="padding-left: 8px;" v-if="$slots['icon-right'] || props.iconRight">
+          <div style="padding-left: 8px;" v-if="$slots['icon-right'] || props.iconRight" class="flex align-center justify-center">
             <slot name="icon-right" >
               <SIcon :color="props.color" v-if="props.iconRight" :icon="props.iconRight" :size="props.size" />
             </slot>
@@ -80,19 +80,19 @@ const click = () => {
     text-transform: uppercase;
     &-size {
       &-x-small {
-        padding: 4px 8px;
+        padding: 4px 8px !important;
       }
       &-small {
-        padding: 7px 12px;
+        padding: 7px 12px !important;;
       }
       &-large {
-        padding: 14px 20px;
+        padding: 14px 20px !important;;
       }
       &-x-large {
-        padding: 16px 23px;
+        padding: 16px 23px !important;;
       }
       &-normal {
-        padding: 10px 16px;
+        padding: 10px 16px !important;;
       }
     }
 

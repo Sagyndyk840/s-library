@@ -22,19 +22,19 @@ const props = withDefaults(defineProps<SkyIconProps>(), {
 .icon {
   &-size {
     &-x-small {
-      font-size: 8px;
+      font-size: 15px;
     }
     &-small {
-      font-size: 10px;
+      font-size: 18px;
     }
     &-large {
-      font-size: 12px;
+      font-size: 20px;
     }
     &-x-large {
       font-size: 22px;
     }
     &-normal {
-      font-size: 14px;
+      font-size: 16px;
     }
   }
 }
