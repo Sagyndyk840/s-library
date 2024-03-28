@@ -2,6 +2,8 @@
 import type SkyButtonProps from "@/types/components/button";
 import SIcon from "@/components/icon/SIcon.vue";
 
+const emit = defineEmits(['click'])
+
 const props = withDefaults(defineProps<SkyButtonProps>(), {
   type: "button",
   density: "default",
@@ -14,10 +16,8 @@ const props = withDefaults(defineProps<SkyButtonProps>(), {
   color: "red",
   textColor: "white",
   disabled: false,
+  block: false
 })
-
-const emit = defineEmits(['click'])
-
 
 const click = () => {
   emit('click')
@@ -35,6 +35,7 @@ const click = () => {
       `btn-align-${props.align}`,
       `btn-density-${props.density}`,
       `rounded-${props.rounded}`,
+      props.block ? 'block' : '',
       {
         'outlined': props.outlined,
         'disabled': props.disabled
@@ -119,9 +120,14 @@ const click = () => {
         padding: 7px 12px;
       }
     }
+
   }
 
   .outlined {
     background-color: transparent;
+  }
+
+  .block {
+    width: 100%;
   }
 </style>
