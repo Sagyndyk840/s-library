@@ -11,10 +11,10 @@ export default interface SkyButtonProps {
     label: string, // Ready
     iconLeft?: string, //
     iconRight?: string, //
+    block: boolean //
     icon?: string,
     loading: boolean,
     disabled: boolean
-    block: boolean
 }
 
 type Colors = typeof colors[number]
