@@ -50,13 +50,13 @@ const click = () => {
         <div v-if="!icon || !$slots['icon-left']" class="flex align-center justify-center">
           <div style="padding-right: 8px;" v-if="$slots['icon-left'] || props.iconLeft" class="flex align-center justify-center">
             <slot name="icon-left" >
-              <SIcon :color="props.color" v-if="props.iconLeft" :icon="props.iconLeft" :size="props.size" />
+              <SIcon :color="props.outlined ? props.color : props.textColor" v-if="props.iconLeft" :icon="props.iconLeft" :size="props.size" />
             </slot>
           </div>
           <slot :class="props.textColor">{{ props.label }}</slot>
           <div style="padding-left: 8px;" v-if="$slots['icon-right'] || props.iconRight" class="flex align-center justify-center">
             <slot name="icon-right" >
-              <SIcon :color="props.color" v-if="props.iconRight" :icon="props.iconRight" :size="props.size" />
+              <SIcon :color="props.outlined ? props.color : props.textColor" v-if="props.iconRight" :icon="props.iconRight" :size="props.size" />
             </slot>
           </div>
         </div>
