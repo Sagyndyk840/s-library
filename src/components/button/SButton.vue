@@ -30,9 +30,8 @@ const click = () => {
     <button :disabled="props.disabled" @click="click" :type="props.type" class="btn" :class="[
       props.outlined ? `text-${props.color}` : `text-${props.textColor}`,
       props.outlined ? `outlined-${props.color}` : `bg-${props.color}`,
-      props.align,
       `btn-size-${props.size}`,
-      `btn-align-${props.align}`,
+      props.block ? 'btn-align-center' :`btn-align-${props.align}`,
       `btn-density-${props.density}`,
       `rounded-${props.rounded}`,
       props.block ? 'block' : '',
