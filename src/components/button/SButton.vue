@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import type SkyButtonProps from "@/types/components/button";
 import SIcon from "@/components/icon/SIcon.vue";
+import ClipLoader from "@/components/loaders/ClipLoader.vue";
 
 const emit = defineEmits(['click'])
 
@@ -41,10 +42,12 @@ const click = () => {
         'disabled': props.disabled
       }
     ]">
-      <div>
-        <slot name="loader"></slot>
+      <div v-if="props.loading">
+        <slot name="loader">
+          <ClipLoader :color="props.outlined ? props.color : props.textColor" :size="props.size" :loading="props.loading"/>
+        </slot>
       </div>
-      <div>
+      <div v-else>
         <div v-if="props.icon">
           <slot name="icon">
             <SIcon :color="props.outlined ? props.color : props.textColor" v-if="props.iconLeft" :icon="props.iconLeft" :size="props.size" />

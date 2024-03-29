@@ -5,7 +5,7 @@ import SButton from "@/components/button/SButton.vue";
 <template>
   <div class="wrapper">
 
-    <SButton    color="blue" text-color="white" size="normal" label="Extra large button" icon-left="person" icon-right="person"  >
+    <SButton :loading="false"   color="blue" text-color="white" size="normal" label="Extra large button" icon-left="person" icon-right="person"  >
 
     </SButton>
 

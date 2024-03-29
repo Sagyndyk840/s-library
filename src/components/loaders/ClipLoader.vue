@@ -5,14 +5,12 @@ import { computed } from 'vue'
 const props = withDefaults(defineProps<SkyLoaderProps>(), {
   loading: false,
   color: 'red',
-  size: 'normal',
+  size: 'x-large',
   radius: '100%'
 })
 
 const spinnerStyle = computed(() => {
   return {
-    height: props.size,
-    width: props.size,
     borderWidth: '2px',
     borderStyle: 'solid',
     borderColor: props.color + ' ' + props.color + ' transparent',
@@ -25,7 +23,9 @@ const spinnerStyle = computed(() => {
 
 <template>
   <div class="s-spinner" v-show="props.loading">
-    <div class="s-clip" :style="spinnerStyle">
+    <div class="s-clip" :class="[
+        `s-clip-size-${props.size}`
+    ]" :style="spinnerStyle">
     </div>
   </div>
 
@@ -35,15 +35,39 @@ const spinnerStyle = computed(() => {
 .s-spinner {
   text-align: center;
 
-  .s-clip
-  {
+  .s-clip {
     -webkit-animation: v-clipDelay 0.75s 0s infinite linear;
     animation: v-clipDelay 0.75s 0s infinite linear;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
 
     display: inline-block;
+
+    &-size {
+      &-x-small {
+        width: 10px;
+        height: 10px;
+      }
+      &-small {
+        width: 10px;
+        height: 11px;
+      }
+      &-large {
+        width: 15px;
+        height: 14px;
+      }
+      &-x-large {
+        width: 15px;
+        height: 14px;
+      }
+      &-normal {
+        width: 14px;
+        height: 14px;
+      }
+    }
   }
+
+
 }
 
 @-webkit-keyframes v-clipDelay
