@@ -42,7 +42,7 @@ const click = () => {
         'disabled': props.disabled
       }
     ]">
-      <div v-if="props.loading">
+      <div v-if="props.loading" class="flex align-center justify-center">
         <slot name="loader">
           <ClipLoader :color="props.outlined ? props.color : props.textColor" :size="props.size" :loading="props.loading"/>
         </slot>

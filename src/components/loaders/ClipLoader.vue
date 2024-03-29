@@ -6,7 +6,7 @@ const props = withDefaults(defineProps<SkyLoaderProps>(), {
   loading: false,
   color: 'red',
   size: 'x-large',
-  radius: '100%'
+  radius: '90%'
 })
 
 const spinnerStyle = computed(() => {
