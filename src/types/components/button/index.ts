@@ -16,7 +16,7 @@ export default interface SkyButtonProps {
     loading: boolean, // Ready
     disabled: boolean, // Ready
     stacked: boolean, // Ready
-    to?: string,
+    to?: string, // Ready
 }
 
 // HOVER, FOCUS, DISABLED, LOADING LOADER
