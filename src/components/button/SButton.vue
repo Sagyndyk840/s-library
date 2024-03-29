@@ -83,6 +83,12 @@ const click = () => {
     align-items: center;
     letter-spacing: 0.01em;
     text-transform: uppercase;
+    transition: .3s all ease;
+
+    &:hover {
+      opacity: .5;
+    }
+
     &-size {
       &-x-small {
         padding: 4px 8px !important;

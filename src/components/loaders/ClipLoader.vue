@@ -1,0 +1,86 @@
+<script setup lang="ts">
+import type SkyLoaderProps from "@/types/components/loaders/clip-loader";
+import { computed } from 'vue'
+
+const props = withDefaults(defineProps<SkyLoaderProps>(), {
+  loading: false,
+  color: 'red',
+  size: 'normal',
+  radius: '100%'
+})
+
+const spinnerStyle = computed(() => {
+  return {
+    height: props.size,
+    width: props.size,
+    borderWidth: '2px',
+    borderStyle: 'solid',
+    borderColor: props.color + ' ' + props.color + ' transparent',
+    borderRadius: props.radius,
+    background: 'transparent'
+  }
+})
+
+</script>
+
+<template>
+  <div class="s-spinner" v-show="props.loading">
+    <div class="s-clip" :style="spinnerStyle">
+    </div>
+  </div>
+
+</template>
+
+<style scoped lang="scss">
+.s-spinner {
+  text-align: center;
+
+  .s-clip
+  {
+    -webkit-animation: v-clipDelay 0.75s 0s infinite linear;
+    animation: v-clipDelay 0.75s 0s infinite linear;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+
+    display: inline-block;
+  }
+}
+
+@-webkit-keyframes v-clipDelay
+{
+  0%
+  {
+    -webkit-transform: rotate(0deg) scale(1);
+    transform: rotate(0deg) scale(1);
+  }
+  50%
+  {
+    -webkit-transform: rotate(180deg) scale(0.8);
+    transform: rotate(180deg) scale(0.8);
+  }
+  100%
+  {
+    -webkit-transform: rotate(360deg) scale(1);
+    transform: rotate(360deg) scale(1);
+  }
+}
+
+@keyframes v-clipDelay
+{
+  0%
+  {
+    -webkit-transform: rotate(0deg) scale(1);
+    transform: rotate(0deg) scale(1);
+  }
+  50%
+  {
+    -webkit-transform: rotate(180deg) scale(0.8);
+    transform: rotate(180deg) scale(0.8);
+  }
+  100%
+  {
+    -webkit-transform: rotate(360deg) scale(1);
+    transform: rotate(360deg) scale(1);
+  }
+}
+</style>
