@@ -30,11 +30,12 @@ const click = () => {
     <button :disabled="props.disabled" @click="click" :type="props.type" class="btn" :class="[
       props.outlined ? `text-${props.color}` : `text-${props.textColor}`,
       props.outlined ? `outlined-${props.color}` : `bg-${props.color}`,
-      `btn-size-${props.size}`,
+      !props.icon ? `btn-size-${props.size}` : `icon-${props.size}`,
       props.block ? 'btn-align-center' :`btn-align-${props.align}`,
-      `btn-density-${props.density}`,
+      !props.icon ? `btn-density-${props.density}` : '',
       `rounded-${props.rounded}`,
       props.block ? 'block' : '',
+      props.icon ? 'icon' : '',
       {
         'outlined': props.outlined,
         'disabled': props.disabled
@@ -44,22 +45,26 @@ const click = () => {
         <slot name="loader"></slot>
       </div>
       <div>
-        <div>
-          <slot name="icon"></slot>
+        <div v-if="props.icon">
+          <slot name="icon">
+            <SIcon :color="props.outlined ? props.color : props.textColor" v-if="props.iconLeft" :icon="props.iconLeft" :size="props.size" />
+          </slot>
         </div>
-        <div v-if="!icon || !$slots['icon-left']" class="flex align-center justify-center">
-          <div style="padding-right: 8px;" v-if="$slots['icon-left'] || props.iconLeft" class="flex align-center justify-center">
-            <slot name="icon-left" >
-              <SIcon :color="props.outlined ? props.color : props.textColor" v-if="props.iconLeft" :icon="props.iconLeft" :size="props.size" />
-            </slot>
-          </div>
-          <slot :class="props.textColor">{{ props.label }}</slot>
-          <div style="padding-left: 8px;" v-if="$slots['icon-right'] || props.iconRight" class="flex align-center justify-center">
-            <slot name="icon-right" >
-              <SIcon :color="props.outlined ? props.color : props.textColor" v-if="props.iconRight" :icon="props.iconRight" :size="props.size" />
-            </slot>
-          </div>
-        </div>
+       <div v-else>
+         <div v-if="!icon || !$slots['icon-left']" class="flex align-center justify-center">
+           <div style="padding-right: 8px;" v-if="$slots['icon-left'] || props.iconLeft" class="flex align-center justify-center">
+             <slot name="icon-left" >
+               <SIcon :color="props.outlined ? props.color : props.textColor" v-if="props.iconLeft" :icon="props.iconLeft" :size="props.size" />
+             </slot>
+           </div>
+           <slot :class="props.textColor">{{ props.label }}</slot>
+           <div style="padding-left: 8px;" v-if="$slots['icon-right'] || props.iconRight" class="flex align-center justify-center">
+             <slot name="icon-right" >
+               <SIcon :color="props.outlined ? props.color : props.textColor" v-if="props.iconRight" :icon="props.iconRight" :size="props.size" />
+             </slot>
+           </div>
+         </div>
+       </div>
       </div>
     </button>
 
@@ -128,5 +133,26 @@ const click = () => {
 
   .block {
     width: 100%;
+  }
+
+  .icon {
+    border-radius: 100px;
+
+    &-x-small {
+      padding: 7px !important;
+    }
+    &-small {
+      padding: 8px !important;;
+    }
+    &-large {
+      padding: 20px !important;;
+    }
+    &-x-large {
+      padding: 24px !important;;
+    }
+    &-normal {
+      padding: 16px !important;;
+    }
+
   }
 </style>
