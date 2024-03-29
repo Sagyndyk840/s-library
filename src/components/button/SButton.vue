@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type SkyButtonProps from "@/types/components/button";
 import SIcon from "@/components/icon/SIcon.vue";
-import ClipLoader from "@/components/loaders/ClipLoader.vue";
+import ClipLoader from "@/components/loaders/clip-loader/ClipLoader.vue";
 
 const emit = defineEmits(['click'])
 
