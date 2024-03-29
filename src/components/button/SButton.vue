@@ -18,7 +18,7 @@ const props = withDefaults(defineProps<SkyButtonProps>(), {
   textColor: "white",
   disabled: false,
   block: false,
-  stacked: false
+  stacked: false,
 })
 
 const click = () => {
@@ -29,7 +29,7 @@ const click = () => {
 
 <template>
   <div>
-    <button :disabled="props.disabled" @click="click" :type="props.type" class="btn" :class="[
+    <component :is="props.to ? 'router-link' : 'button'" :to="to" :disabled="props.disabled" @click="click" :type="props.type" class="btn" :class="[
       props.outlined ? `text-${props.color}` : `text-${props.textColor}`,
       props.outlined ? `outlined-${props.color}` : `bg-${props.color}`,
       !props.icon ? `btn-size-${props.size}` : `icon-${props.size}`,
@@ -39,6 +39,7 @@ const click = () => {
       props.block ? 'block' : '',
       props.icon ? 'icon' : '',
       props.stacked ? 'stacked' : '',
+      props.to ? 'display-inline-block' : 'flex',
       {
         'outlined': props.outlined,
         'disabled': props.disabled
@@ -73,7 +74,7 @@ const click = () => {
          </div>
        </div>
       </div>
-    </button>
+    </component>
 
   </div>
 
@@ -86,7 +87,6 @@ const click = () => {
     cursor: pointer;
     font-size: 14px;
     font-weight: 700;
-    display: flex;
     align-items: center;
     letter-spacing: 0.01em;
     text-transform: uppercase;
