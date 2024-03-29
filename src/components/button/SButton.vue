@@ -17,7 +17,8 @@ const props = withDefaults(defineProps<SkyButtonProps>(), {
   color: "red",
   textColor: "white",
   disabled: false,
-  block: false
+  block: false,
+  stacked: false
 })
 
 const click = () => {
@@ -37,6 +38,7 @@ const click = () => {
       `rounded-${props.rounded}`,
       props.block ? 'block' : '',
       props.icon ? 'icon' : '',
+      props.stacked ? 'stacked' : '',
       {
         'outlined': props.outlined,
         'disabled': props.disabled
@@ -54,14 +56,16 @@ const click = () => {
           </slot>
         </div>
        <div v-else>
-         <div v-if="!icon || !$slots['icon-left']" class="flex align-center justify-center icon">
-           <div style="padding-right: 8px;" v-if="$slots['icon-left'] || props.iconLeft" class="flex align-center justify-center">
+         <div v-if="!icon || !$slots['icon-left']" class="flex align-center justify-center icon stacked-column">
+           <div style="padding-right: 8px;" v-if="$slots['icon-left'] || props.iconLeft" class="flex align-center justify-center icon-slot icon-slot-left">
              <slot name="icon-left" >
                <SIcon :color="props.outlined ? props.color : props.textColor" v-if="props.iconLeft" :icon="props.iconLeft" :size="props.size" />
              </slot>
            </div>
-           <slot :class="props.textColor">{{ props.label }}</slot>
-           <div style="padding-left: 8px;" v-if="$slots['icon-right'] || props.iconRight" class="flex align-center justify-center">
+           <slot :class="props.textColor" name="label">
+             <span class="label">{{ props.label }}</span>
+           </slot>
+           <div style="padding-left: 8px;" v-if="$slots['icon-right'] || props.iconRight" class="flex align-center justify-center icon-slot icon-slot-right">
              <slot name="icon-right" >
                <SIcon :color="props.outlined ? props.color : props.textColor" v-if="props.iconRight" :icon="props.iconRight" :size="props.size" />
              </slot>
@@ -171,6 +175,24 @@ const click = () => {
     cursor: not-allowed;
     .icon span {
       color: rgba(0, 0, 0, 0.26) !important;
+    }
+  }
+
+  .stacked .stacked {
+    &-column {
+      display: flex;
+      flex-direction: column;
+
+      .icon-slot {
+        padding: 0 !important;
+      }
+
+      .icon-slot-left {
+        padding-bottom: 10px !important;
+      }
+      .icon-slot-right {
+        padding-top: 10px !important;
+      }
     }
   }
 </style>
