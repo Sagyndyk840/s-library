@@ -51,7 +51,7 @@ const click = () => {
           </slot>
         </div>
        <div v-else>
-         <div v-if="!icon || !$slots['icon-left']" class="flex align-center justify-center">
+         <div v-if="!icon || !$slots['icon-left']" class="flex align-center justify-center icon">
            <div style="padding-right: 8px;" v-if="$slots['icon-left'] || props.iconLeft" class="flex align-center justify-center">
              <slot name="icon-left" >
                <SIcon :color="props.outlined ? props.color : props.textColor" v-if="props.iconLeft" :icon="props.iconLeft" :size="props.size" />
@@ -154,5 +154,14 @@ const click = () => {
       padding: 16px !important;;
     }
 
+  }
+
+  .disabled {
+    background: rgba(0, 0, 0, 0.12);
+    color: rgba(0, 0, 0, 0.26) !important;
+    cursor: not-allowed;
+    .icon span {
+      color: rgba(0, 0, 0, 0.26) !important;
+    }
   }
 </style>
