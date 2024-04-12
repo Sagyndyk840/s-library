@@ -39,3 +39,17 @@
     align-items: flex-start;
   }
 }
+
+.display {
+  &-inline-block {
+    display: inline-block;
+  }
+
+  &-block {
+    display: block;
+  }
+
+  &-inline {
+    display: inline-block;
+  }
+}

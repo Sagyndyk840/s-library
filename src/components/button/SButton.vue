@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type SkyButtonProps from "@/types/components/button";
 import SIcon from "@/components/icon/SIcon.vue";
-import ClipLoader from "@/components/loaders/ClipLoader.vue";
+import ClipLoader from "@/components/loaders/clip-loader/ClipLoader.vue";
 
 const emit = defineEmits(['click'])
 
@@ -17,7 +17,8 @@ const props = withDefaults(defineProps<SkyButtonProps>(), {
   color: "red",
   textColor: "white",
   disabled: false,
-  block: false
+  block: false,
+  stacked: false,
 })
 
 const click = () => {
@@ -28,7 +29,7 @@ const click = () => {
 
 <template>
   <div>
-    <button :disabled="props.disabled" @click="click" :type="props.type" class="btn" :class="[
+    <component :is="props.to ? 'router-link' : 'button'" :to="to" :disabled="props.disabled" @click="click" :type="props.type" class="btn" :class="[
       props.outlined ? `text-${props.color}` : `text-${props.textColor}`,
       props.outlined ? `outlined-${props.color}` : `bg-${props.color}`,
       !props.icon ? `btn-size-${props.size}` : `icon-${props.size}`,
@@ -37,6 +38,8 @@ const click = () => {
       `rounded-${props.rounded}`,
       props.block ? 'block' : '',
       props.icon ? 'icon' : '',
+      props.stacked ? 'stacked' : '',
+      props.to ? 'display-inline-block' : 'flex',
       {
         'outlined': props.outlined,
         'disabled': props.disabled
@@ -54,14 +57,16 @@ const click = () => {
           </slot>
         </div>
        <div v-else>
-         <div v-if="!icon || !$slots['icon-left']" class="flex align-center justify-center icon">
-           <div style="padding-right: 8px;" v-if="$slots['icon-left'] || props.iconLeft" class="flex align-center justify-center">
+         <div v-if="!icon || !$slots['icon-left']" class="flex align-center justify-center icon stacked-column">
+           <div style="padding-right: 8px;" v-if="$slots['icon-left'] || props.iconLeft" class="flex align-center justify-center icon-slot icon-slot-left">
              <slot name="icon-left" >
                <SIcon :color="props.outlined ? props.color : props.textColor" v-if="props.iconLeft" :icon="props.iconLeft" :size="props.size" />
              </slot>
            </div>
-           <slot :class="props.textColor">{{ props.label }}</slot>
-           <div style="padding-left: 8px;" v-if="$slots['icon-right'] || props.iconRight" class="flex align-center justify-center">
+           <slot :class="props.textColor" name="label">
+             <span class="label">{{ props.label }}</span>
+           </slot>
+           <div style="padding-left: 8px;" v-if="$slots['icon-right'] || props.iconRight" class="flex align-center justify-center icon-slot icon-slot-right">
              <slot name="icon-right" >
                <SIcon :color="props.outlined ? props.color : props.textColor" v-if="props.iconRight" :icon="props.iconRight" :size="props.size" />
              </slot>
@@ -69,7 +74,7 @@ const click = () => {
          </div>
        </div>
       </div>
-    </button>
+    </component>
 
   </div>
 
@@ -82,7 +87,6 @@ const click = () => {
     cursor: pointer;
     font-size: 14px;
     font-weight: 700;
-    display: flex;
     align-items: center;
     letter-spacing: 0.01em;
     text-transform: uppercase;
@@ -171,6 +175,24 @@ const click = () => {
     cursor: not-allowed;
     .icon span {
       color: rgba(0, 0, 0, 0.26) !important;
+    }
+  }
+
+  .stacked .stacked {
+    &-column {
+      display: flex;
+      flex-direction: column;
+
+      .icon-slot {
+        padding: 0 !important;
+      }
+
+      .icon-slot-left {
+        padding-bottom: 10px !important;
+      }
+      .icon-slot-right {
+        padding-top: 10px !important;
+      }
     }
   }
 </style>
