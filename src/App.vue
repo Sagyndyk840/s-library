@@ -6,8 +6,7 @@ import ClipLoader from "@/components/loaders/ClipLoader.vue";
 <template>
   <div class="wrapper">
 
-    <SButton :loading="true" color="blue" block text-color="white" size="normal" label="Extra large button" icon-left="person" icon-right="person"  >
-
+    <SButton  color="blue"  text-color="white" size="normal" label="Extra large button"   >
     </SButton>
 
   </div>
