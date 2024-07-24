@@ -6,7 +6,7 @@ export default interface SkyButtonProps {
     rounded: BtnRounded, // Ready
     align: BtnAlign, // Ready
     outlined: boolean, // Ready
-    color:  Colors, // Ready
+    color:  'red' | 'blue' | 'yellow' | 'green' | 'gray',  // Ready
     textColor: Colors, // Ready
     label: string, // Ready
     iconLeft?: string, // Ready
